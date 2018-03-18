@@ -72,7 +72,7 @@ class MyTopo( Topo ):
 	        self.addLink( self.AggregateSwitches[k], self.AccessSwitches[k], **linkopts )
 	        self.addLink( self.AggregateSwitches[k], self.AccessSwitches[k+1], **linkopts )
 	    else:
-		self.addLink( self.AggregateSwitches[k], self.AccessSwitches[k], **linkopts )
+		    self.addLink( self.AggregateSwitches[k], self.AccessSwitches[k], **linkopts )
 	        self.addLink( self.AggregateSwitches[k], self.AccessSwitches[k-1], **linkopts )
 	
 	# Add links access <-> hosts
