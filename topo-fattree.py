@@ -4,7 +4,7 @@ Two directly connected switches plus a host for each switch:
 
    host --- switch --- switch --- host
 
-Adding the 'topos' dict with a key/value pair to generate our newly defined
+iAdding the 'topos' dict with a key/value pair to generate our newly defined
 topology enables one to pass in '--topo=mytopo' from the command line.
 """
 
@@ -34,7 +34,7 @@ class MyTopo( Topo ):
         # Initialize topology
         Topo.__init__( self )
 
-	self.bw_c2ag = 5.0
+	    self.bw_c2ag = 5.0
         self.bw_ag2ac = 0.5
         self.bw_ac2h = 0.05
 	
